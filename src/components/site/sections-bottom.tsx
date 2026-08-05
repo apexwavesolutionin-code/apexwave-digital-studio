@@ -14,9 +14,10 @@ import {
   Facebook,
   Youtube,
   Twitter,
-  Waves,
 } from "lucide-react";
 import { Reveal } from "./reveal";
+import markAsset from "@/assets/apexwave-mark.png.asset.json";
+
 
 const SERVICE_OPTIONS = [
   "Website Development",
