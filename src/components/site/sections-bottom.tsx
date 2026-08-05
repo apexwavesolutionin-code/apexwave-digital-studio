@@ -243,8 +243,8 @@ export function Contact() {
                       </option>
                     ))}
                   </select>
-                  {errors.service && (
-                    <p className="mt-1.5 text-xs text-destructive">{errors.service}</p>
+                  {errors['service'] && (
+                    <p className="mt-1.5 text-xs text-destructive">{errors['service']}</p>
                   )}
                 </div>
 
@@ -262,8 +262,8 @@ export function Contact() {
                       </option>
                     ))}
                   </select>
-                  {errors.budget && (
-                    <p className="mt-1.5 text-xs text-destructive">{errors.budget}</p>
+                  {errors['budget'] && (
+                    <p className="mt-1.5 text-xs text-destructive">{errors['budget']}</p>
                   )}
                 </div>
 
@@ -279,8 +279,8 @@ export function Contact() {
                     placeholder="Tell us about your goals, timeline and scope."
                     className={`${field} mt-1.5 resize-none`}
                   />
-                  {errors.message && (
-                    <p className="mt-1.5 text-xs text-destructive">{errors.message}</p>
+                  {errors['message'] && (
+                    <p className="mt-1.5 text-xs text-destructive">{errors['message']}</p>
                   )}
                 </div>
               </div>
