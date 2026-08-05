@@ -21,6 +21,7 @@ import {
   MessagesSquare,
   LifeBuoy,
   TrendingUp,
+  MessageCircle,
 } from "lucide-react";
 import heroImg from "@/assets/hero-3d.jpg";
 import { Counter, Reveal } from "./reveal";
