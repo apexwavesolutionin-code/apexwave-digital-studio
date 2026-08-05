@@ -60,10 +60,13 @@ export function Hero() {
               <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
             </a>
             <a
-              href="#portfolio"
-              className="glass lift inline-flex items-center gap-2 rounded-xl px-6 py-3.5 text-sm font-semibold"
+              href="https://wa.me/919345192523"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center gap-2 rounded-xl bg-[#25D366] px-6 py-3.5 text-sm font-semibold text-white transition-all hover:brightness-110 hover:shadow-lg"
             >
-              View Portfolio
+              <MessageCircle className="size-4 fill-current" />
+              Message on WhatsApp
             </a>
           </Reveal>
           <Reveal delay={320} className="mt-12 grid max-w-lg grid-cols-3 gap-4">
