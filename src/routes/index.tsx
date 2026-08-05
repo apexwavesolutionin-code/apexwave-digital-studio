@@ -40,6 +40,7 @@ function Index() {
       </main>
       <Footer />
       <FloatingActions />
+      <WhatsAppButton />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
