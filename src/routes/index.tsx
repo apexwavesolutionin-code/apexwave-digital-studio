@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Nav } from "@/components/site/nav";
 import { FloatingActions } from "@/components/site/floating-actions";
+import { WhatsAppButton } from "@/components/site/whatsapp-button";
 import { Hero, About, Services, WhyUs } from "@/components/site/sections-top";
 import { Portfolio, Process, Testimonials, Faq } from "@/components/site/sections-mid";
 import { Contact, FinalCta, Footer } from "@/components/site/sections-bottom";
