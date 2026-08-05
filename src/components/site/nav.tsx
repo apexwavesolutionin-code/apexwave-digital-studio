@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
-import { Menu, X, Waves } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
+import markAsset from "@/assets/apexwave-mark.png.asset.json";
+
 
 const LINKS = [
   { label: "Home", href: "#home" },
@@ -34,13 +36,18 @@ export function Nav() {
         )}
       >
         <a href="#home" className="flex min-w-0 items-center gap-2.5">
-          <span className="grid size-9 shrink-0 place-items-center rounded-xl bg-primary/15 text-primary ring-1 ring-primary/30">
-            <Waves className="size-4.5" />
-          </span>
+          <img
+            src={markAsset.url}
+            alt="Apexwave Solution logo"
+            width={428}
+            height={311}
+            className="h-9 w-auto shrink-0"
+          />
           <span className="truncate font-display text-sm font-extrabold tracking-[0.18em] uppercase">
-            Apexwave
+            Apexwave Solution
           </span>
         </a>
+
 
         <ul className="hidden items-center gap-1 lg:flex">
           {LINKS.map((l) => (

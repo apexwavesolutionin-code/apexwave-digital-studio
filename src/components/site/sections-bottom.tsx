@@ -14,9 +14,10 @@ import {
   Facebook,
   Youtube,
   Twitter,
-  Waves,
 } from "lucide-react";
 import { Reveal } from "./reveal";
+import markAsset from "@/assets/apexwave-mark.png.asset.json";
+
 
 const SERVICE_OPTIONS = [
   "Website Development",
@@ -54,7 +55,7 @@ const SOCIALS = [
   { label: "YouTube", icon: Youtube, href: "https://www.youtube.com" },
 ];
 
-const MAP_QUERY = "Chennai, Tamil Nadu, India";
+const MAP_QUERY = "Villapuram, Madurai, Tamil Nadu, India";
 
 export function Contact() {
   const [errors, setErrors] = useState<Record<string, string>>({});
@@ -368,13 +369,18 @@ export function Footer() {
         <div className="grid gap-10 lg:grid-cols-[1.4fr_1fr_1fr_1.3fr]">
           <div>
             <div className="flex items-center gap-2.5">
-              <span className="grid size-9 place-items-center rounded-xl bg-primary/15 text-primary ring-1 ring-primary/30">
-                <Waves className="size-4.5" />
-              </span>
+              <img
+                src={markAsset.url}
+                alt="Apexwave Solution logo"
+                width={428}
+                height={311}
+                className="h-9 w-auto"
+              />
               <span className="font-display text-sm font-extrabold tracking-[0.18em] uppercase">
-                Apexwave
+                Apexwave Solution
               </span>
             </div>
+
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted-foreground">
               A digital studio building brands, websites, apps and growth systems for ambitious
               businesses.
