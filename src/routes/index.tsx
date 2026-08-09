@@ -49,7 +49,8 @@ function Index() {
             "@type": "ProfessionalService",
             name: "APEXWAVES SOLUTION",
             slogan: "Build. Brand. Grow.",
-            description,
+            description:
+              "Premium branding, websites, mobile apps, digital marketing and lead generation built for measurable business growth.",
             email: "apexwavesolution.in@gmail.com",
             telephone: "+91 93451 92523",
             areaServed: "IN",

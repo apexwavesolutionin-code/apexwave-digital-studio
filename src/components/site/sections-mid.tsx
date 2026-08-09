@@ -59,7 +59,7 @@ export function Portfolio() {
   const shown = filter === "All" ? PROJECTS : PROJECTS.filter((p) => p.category === filter);
 
   return (
-    <section id="portfolio" className="relative py-24">
+    <section id="portfolio" className="relative py-16 sm:py-24">
       <div className="mx-auto max-w-6xl px-4">
         <Reveal className="max-w-2xl">
           <p className="text-xs tracking-[0.25em] text-primary uppercase">Portfolio</p>
@@ -134,7 +134,7 @@ const STEPS = [
 
 export function Process() {
   return (
-    <section id="process" className="relative py-24">
+    <section id="process" className="relative py-16 sm:py-24">
       <div className="mx-auto max-w-6xl px-4">
         <Reveal className="max-w-2xl">
           <p className="text-xs tracking-[0.25em] text-primary uppercase">Working Process</p>
@@ -143,7 +143,7 @@ export function Process() {
           </h2>
         </Reveal>
 
-        <ol className="relative mt-14 grid gap-5 md:grid-cols-3">
+        <ol className="relative mt-10 grid gap-5 sm:mt-14 md:grid-cols-3">
           <div
             aria-hidden
             className="hairline absolute inset-x-0 top-16 hidden md:block"
@@ -197,7 +197,7 @@ const TESTIMONIALS = [
 
 export function Testimonials() {
   return (
-    <section id="testimonials" className="relative overflow-hidden py-24">
+    <section id="testimonials" className="relative overflow-hidden py-16 sm:py-24">
       <div className="mx-auto max-w-6xl px-4">
         <Reveal className="max-w-2xl">
           <p className="text-xs tracking-[0.25em] text-primary uppercase">Testimonials</p>
@@ -207,7 +207,7 @@ export function Testimonials() {
         </Reveal>
       </div>
 
-      <div className="group relative mt-14 overflow-hidden [mask-image:linear-gradient(90deg,transparent,black_8%,black_92%,transparent)]">
+      <div className="group relative mt-10 overflow-hidden sm:mt-14 [mask-image:linear-gradient(90deg,transparent,black_8%,black_92%,transparent)]">
         <ul className="animate-marquee flex w-max gap-5 group-hover:[animation-play-state:paused]">
           {[...TESTIMONIALS, ...TESTIMONIALS].map((t, i) => (
             <li key={`${t.name}-${i}`} className="glass w-[19rem] shrink-0 rounded-3xl p-6 sm:w-96">
@@ -267,7 +267,7 @@ const FAQS = [
 
 export function Faq() {
   return (
-    <section id="faq" className="relative py-24">
+    <section id="faq" className="relative py-16 sm:py-24">
       <div className="mx-auto grid max-w-6xl gap-12 px-4 lg:grid-cols-[0.8fr_1.2fr]">
         <Reveal>
           <p className="text-xs tracking-[0.25em] text-primary uppercase">FAQ</p>

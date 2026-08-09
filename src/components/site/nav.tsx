@@ -96,6 +96,13 @@ export function Nav() {
               </li>
             ))}
           </ul>
+          <a
+            href="#contact"
+            onClick={() => setOpen(false)}
+            className="mt-2 flex items-center justify-center rounded-xl bg-primary px-4 py-3 text-sm font-semibold text-primary-foreground sm:hidden"
+          >
+            Book Free Consultation
+          </a>
         </div>
       )}
     </header>

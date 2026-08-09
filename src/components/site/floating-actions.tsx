@@ -39,7 +39,7 @@ export function FloatingActions() {
         aria-label={open ? "Close contact menu" : "Open contact menu"}
         aria-expanded={open}
         onClick={() => setOpen((v) => !v)}
-        className="grid size-14 place-items-center rounded-full bg-primary text-primary-foreground shadow-[var(--shadow-glow)] transition-transform hover:scale-105"
+        className="grid size-12 place-items-center rounded-full bg-primary text-primary-foreground sm:size-14 shadow-[var(--shadow-glow)] transition-transform hover:scale-105"
       >
         {open ? <X className="size-5" /> : <Plus className="size-5" />}
       </button>
