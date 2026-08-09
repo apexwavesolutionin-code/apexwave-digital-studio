@@ -84,7 +84,7 @@ export function Contact() {
     "w-full rounded-xl border border-border bg-white/[0.03] px-4 py-3 text-sm outline-none transition-colors placeholder:text-muted-foreground/70 focus:border-primary/60";
 
   return (
-    <section id="contact" className="relative py-24">
+    <section id="contact" className="relative py-16 sm:py-24">
       <div className="mx-auto max-w-6xl px-4">
         <Reveal className="max-w-2xl">
           <p className="text-xs tracking-[0.25em] text-primary uppercase">Contact</p>
@@ -303,7 +303,7 @@ export function Contact() {
 
 export function FinalCta() {
   return (
-    <section className="relative py-24">
+    <section className="relative py-16 sm:py-24">
       <div className="mx-auto max-w-6xl px-4">
         <div className="hero-bg glass relative overflow-hidden rounded-[2.5rem] px-6 py-20 text-center sm:px-14">
           <div

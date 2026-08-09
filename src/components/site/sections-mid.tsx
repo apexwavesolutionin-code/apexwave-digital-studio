@@ -59,7 +59,7 @@ export function Portfolio() {
   const shown = filter === "All" ? PROJECTS : PROJECTS.filter((p) => p.category === filter);
 
   return (
-    <section id="portfolio" className="relative py-24">
+    <section id="portfolio" className="relative py-16 sm:py-24">
       <div className="mx-auto max-w-6xl px-4">
         <Reveal className="max-w-2xl">
           <p className="text-xs tracking-[0.25em] text-primary uppercase">Portfolio</p>
@@ -134,7 +134,7 @@ const STEPS = [
 
 export function Process() {
   return (
-    <section id="process" className="relative py-24">
+    <section id="process" className="relative py-16 sm:py-24">
       <div className="mx-auto max-w-6xl px-4">
         <Reveal className="max-w-2xl">
           <p className="text-xs tracking-[0.25em] text-primary uppercase">Working Process</p>
@@ -197,7 +197,7 @@ const TESTIMONIALS = [
 
 export function Testimonials() {
   return (
-    <section id="testimonials" className="relative overflow-hidden py-24">
+    <section id="testimonials" className="relative overflow-hidden py-16 sm:py-24">
       <div className="mx-auto max-w-6xl px-4">
         <Reveal className="max-w-2xl">
           <p className="text-xs tracking-[0.25em] text-primary uppercase">Testimonials</p>
@@ -267,7 +267,7 @@ const FAQS = [
 
 export function Faq() {
   return (
-    <section id="faq" className="relative py-24">
+    <section id="faq" className="relative py-16 sm:py-24">
       <div className="mx-auto grid max-w-6xl gap-12 px-4 lg:grid-cols-[0.8fr_1.2fr]">
         <Reveal>
           <p className="text-xs tracking-[0.25em] text-primary uppercase">FAQ</p>

@@ -118,7 +118,7 @@ const STATS = [
 
 export function About() {
   return (
-    <section id="about" className="relative py-24">
+    <section id="about" className="relative py-16 sm:py-24">
       <div className="mx-auto max-w-6xl px-4">
         <div className="grid gap-12 lg:grid-cols-2 lg:items-end">
           <Reveal>
@@ -171,7 +171,7 @@ const SERVICES = [
 
 export function Services() {
   return (
-    <section id="services" className="relative py-24">
+    <section id="services" className="relative py-16 sm:py-24">
       <div className="mx-auto max-w-6xl px-4">
         <Reveal className="max-w-2xl">
           <p className="text-xs tracking-[0.25em] text-primary uppercase">Services</p>
@@ -215,7 +215,7 @@ const REASONS = [
 
 export function WhyUs() {
   return (
-    <section className="relative py-24">
+    <section className="relative py-16 sm:py-24">
       <div className="mx-auto max-w-6xl px-4">
         <div className="glass relative overflow-hidden rounded-[2rem] p-8 sm:p-12">
           <div
