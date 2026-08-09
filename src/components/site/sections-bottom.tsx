@@ -305,7 +305,7 @@ export function FinalCta() {
   return (
     <section className="relative py-16 sm:py-24">
       <div className="mx-auto max-w-6xl px-4">
-        <div className="hero-bg glass relative overflow-hidden rounded-[2.5rem] px-6 py-20 text-center sm:px-14">
+        <div className="hero-bg glass relative overflow-hidden rounded-[1.75rem] px-5 py-14 text-center sm:rounded-[2.5rem] sm:px-14 sm:py-20">
           <div
             aria-hidden
             className="animate-float pointer-events-none absolute -top-20 left-1/2 size-96 -translate-x-1/2 rounded-full bg-primary/25 blur-[130px]"
@@ -315,14 +315,14 @@ export function FinalCta() {
             className="animate-float-slow pointer-events-none absolute -right-16 bottom-0 size-64 rounded-full border border-primary/20"
           />
           <Reveal className="relative">
-            <h2 className="mx-auto max-w-3xl font-display text-3xl leading-tight font-extrabold sm:text-5xl">
+            <h2 className="mx-auto max-w-3xl font-display text-[1.75rem] leading-tight font-extrabold sm:text-5xl">
               Ready to Build Something Exceptional?
             </h2>
             <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-muted-foreground">
               Create a strong digital presence with modern design, strategic branding, and
               performance-focused marketing solutions.
             </p>
-            <div className="mt-9 flex flex-wrap justify-center gap-3">
+            <div className="mt-8 grid gap-3 sm:mt-9 sm:flex sm:flex-wrap sm:justify-center">
               <a
                 href="#contact"
                 className="group inline-flex items-center gap-2 rounded-xl bg-primary px-7 py-3.5 text-sm font-semibold text-primary-foreground transition-all hover:brightness-110 hover:shadow-[var(--shadow-glow)]"
@@ -366,7 +366,7 @@ export function Footer() {
   return (
     <footer className="relative border-t border-border pt-16 pb-10">
       <div className="mx-auto max-w-6xl px-4">
-        <div className="grid gap-10 lg:grid-cols-[1.4fr_1fr_1fr_1.3fr]">
+        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1.3fr]">
           <div>
             <div className="flex items-center gap-2.5">
               <img
