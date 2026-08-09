@@ -18,6 +18,10 @@ export function Reveal({
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
+    if (typeof IntersectionObserver === "undefined") {
+      setVisible(true);
+      return;
+    }
     const io = new IntersectionObserver(
       ([entry]) => {
         if (entry?.isIntersecting) {
@@ -28,7 +32,15 @@ export function Reveal({
       { threshold: 0.15, rootMargin: "0px 0px -60px" },
     );
     io.observe(el);
-    return () => io.disconnect();
+    // Safety net: never leave content invisible if the observer misses.
+    const t = window.setTimeout(() => {
+      const r = el.getBoundingClientRect();
+      if (r.top < window.innerHeight && r.bottom > 0) setVisible(true);
+    }, 700);
+    return () => {
+      window.clearTimeout(t);
+      io.disconnect();
+    };
   }, []);
 
   return (
