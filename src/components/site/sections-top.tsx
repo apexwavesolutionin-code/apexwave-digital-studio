@@ -28,12 +28,12 @@ import { Counter, Reveal } from "./reveal";
 
 export function Hero() {
   return (
-    <section id="home" className="hero-bg relative overflow-hidden pt-36 pb-24 sm:pt-44">
+    <section id="home" className="hero-bg relative overflow-hidden pt-28 pb-16 sm:pt-44 sm:pb-24">
       <div
         aria-hidden
         className="pointer-events-none absolute top-1/3 -left-40 size-[26rem] rounded-full bg-primary/20 blur-[140px]"
       />
-      <div className="mx-auto grid max-w-6xl gap-14 px-4 lg:grid-cols-[1.05fr_1fr] lg:items-center">
+      <div className="mx-auto grid max-w-6xl gap-10 px-4 sm:gap-14 lg:grid-cols-[1.05fr_1fr] lg:items-center">
         <div>
           <Reveal className="glass inline-flex items-center gap-2 rounded-full px-3.5 py-1.5 text-xs tracking-wide text-muted-foreground">
             <Sparkles className="size-3.5 text-primary" />
