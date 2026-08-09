@@ -40,7 +40,7 @@ export function Hero() {
             Build. Brand. Grow.
           </Reveal>
           <Reveal delay={80}>
-            <h1 className="mt-6 font-display text-4xl leading-[1.05] font-extrabold sm:text-5xl lg:text-6xl">
+            <h1 className="mt-6 font-display text-[2rem] leading-[1.08] font-extrabold sm:text-5xl lg:text-6xl">
               We Build Digital Experiences That{" "}
               <span className="text-gradient">Drive Business Growth.</span>
             </h1>
@@ -51,10 +51,10 @@ export function Hero() {
               digital marketing, and lead generation solutions designed for measurable results.
             </p>
           </Reveal>
-          <Reveal delay={240} className="mt-9 flex flex-wrap gap-3">
+          <Reveal delay={240} className="mt-8 grid gap-3 sm:flex sm:flex-wrap">
             <a
               href="#contact"
-              className="group inline-flex items-center gap-2 rounded-xl bg-primary px-6 py-3.5 text-sm font-semibold text-primary-foreground transition-all hover:brightness-110 hover:shadow-[var(--shadow-glow)]"
+              className="group inline-flex items-center justify-center gap-2 rounded-xl bg-primary px-6 py-3.5 text-sm font-semibold text-primary-foreground transition-all hover:brightness-110 hover:shadow-[var(--shadow-glow)]"
             >
               Get Free Consultation
               <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
@@ -63,7 +63,7 @@ export function Hero() {
               href="https://wa.me/919345192523"
               target="_blank"
               rel="noopener noreferrer"
-              className="group inline-flex items-center gap-2 rounded-xl bg-[#25D366] px-6 py-3.5 text-sm font-semibold text-white transition-all hover:brightness-110 hover:shadow-lg"
+              className="group inline-flex items-center justify-center gap-2 rounded-xl bg-[#25D366] px-6 py-3.5 text-sm font-semibold text-white transition-all hover:brightness-110 hover:shadow-lg"
             >
               <MessageCircle className="size-4 fill-current" />
               Message on WhatsApp
