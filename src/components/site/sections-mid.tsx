@@ -143,7 +143,7 @@ export function Process() {
           </h2>
         </Reveal>
 
-        <ol className="relative mt-14 grid gap-5 md:grid-cols-3">
+        <ol className="relative mt-10 grid gap-5 sm:mt-14 md:grid-cols-3">
           <div
             aria-hidden
             className="hairline absolute inset-x-0 top-16 hidden md:block"
@@ -207,7 +207,7 @@ export function Testimonials() {
         </Reveal>
       </div>
 
-      <div className="group relative mt-14 overflow-hidden [mask-image:linear-gradient(90deg,transparent,black_8%,black_92%,transparent)]">
+      <div className="group relative mt-10 overflow-hidden sm:mt-14 [mask-image:linear-gradient(90deg,transparent,black_8%,black_92%,transparent)]">
         <ul className="animate-marquee flex w-max gap-5 group-hover:[animation-play-state:paused]">
           {[...TESTIMONIALS, ...TESTIMONIALS].map((t, i) => (
             <li key={`${t.name}-${i}`} className="glass w-[19rem] shrink-0 rounded-3xl p-6 sm:w-96">

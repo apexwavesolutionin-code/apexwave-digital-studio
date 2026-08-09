@@ -93,9 +93,9 @@ export function Contact() {
           </h2>
         </Reveal>
 
-        <div className="mt-14 grid gap-6 lg:grid-cols-2">
+        <div className="mt-10 grid sm:mt-14 gap-6 lg:grid-cols-2">
           <Reveal className="space-y-6">
-            <div className="glass rounded-3xl p-7">
+            <div className="glass rounded-3xl p-5 sm:p-7">
               <h3 className="font-display text-lg font-bold">Contact Information</h3>
               <div className="mt-5 grid gap-4 text-sm">
                 <a
@@ -203,7 +203,7 @@ export function Contact() {
           </Reveal>
 
           <Reveal delay={120}>
-            <form onSubmit={onSubmit} noValidate className="glass rounded-3xl p-7">
+            <form onSubmit={onSubmit} noValidate className="glass rounded-3xl p-5 sm:p-7">
               <h3 className="font-display text-lg font-bold">Start a project</h3>
               <div className="mt-6 grid gap-4 sm:grid-cols-2">
                 {[

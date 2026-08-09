@@ -136,7 +136,7 @@ export function About() {
           </Reveal>
         </div>
 
-        <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-10 grid sm:mt-14 gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {STATS.map((s, i) => (
             <Reveal key={s.label} delay={i * 90}>
               <div className="glass lift h-full rounded-3xl p-6">
@@ -180,7 +180,7 @@ export function Services() {
           </h2>
         </Reveal>
 
-        <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 grid sm:mt-14 gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {SERVICES.map((s, i) => (
             <Reveal key={s.title} delay={(i % 3) * 80}>
               <article className="glass lift group relative h-full overflow-hidden rounded-3xl p-6">
@@ -217,7 +217,7 @@ export function WhyUs() {
   return (
     <section className="relative py-16 sm:py-24">
       <div className="mx-auto max-w-6xl px-4">
-        <div className="glass relative overflow-hidden rounded-[2rem] p-8 sm:p-12">
+        <div className="glass relative overflow-hidden rounded-[2rem] p-6 sm:p-12">
           <div
             aria-hidden
             className="pointer-events-none absolute -top-24 left-1/3 size-80 rounded-full bg-primary/20 blur-[120px]"
@@ -228,7 +228,7 @@ export function WhyUs() {
               Craft, clarity and accountability on every engagement.
             </h2>
           </Reveal>
-          <ul className="mt-12 grid gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-4">
+          <ul className="mt-8 grid gap-x-8 sm:mt-12 gap-y-6 sm:grid-cols-2 lg:grid-cols-4">
             {REASONS.map((r, i) => (
               <Reveal as="li" key={r.title} delay={(i % 4) * 70}>
                 <r.icon className="size-5 text-primary" />
