@@ -93,7 +93,7 @@ export function Portfolio() {
                 <div className="overflow-hidden">
                   <img
                     src={p.img}
-                    alt={`${p.title} — ${p.category} project by Apexwave Solution`}
+                    alt={`${p.title} — ${p.category} project by APEXWAVES SOLUTION`}
                     loading="lazy"
                     width={1024}
                     height={768}
@@ -169,7 +169,7 @@ const TESTIMONIALS = [
     name: "Ananya Rao",
     company: "Auric Retail",
     quote:
-      "Apexwave rebuilt our storefront and identity in eight weeks. Revenue per session is up 41% and the brand finally feels premium.",
+      "APEXWAVES rebuilt our storefront and identity in eight weeks. Revenue per session is up 41% and the brand finally feels premium.",
     initials: "AR",
   },
   {

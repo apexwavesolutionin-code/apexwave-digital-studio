@@ -38,13 +38,13 @@ export function Nav() {
         <a href="#home" className="flex min-w-0 items-center gap-2.5">
           <img
             src={markAsset.url}
-            alt="Apexwave Solution logo"
+            alt="APEXWAVES SOLUTION logo"
             width={428}
             height={311}
             className="h-9 w-auto shrink-0"
           />
           <span className="truncate font-display text-sm font-extrabold tracking-[0.18em] uppercase">
-            Apexwave Solution
+            APEXWAVES SOLUTION
           </span>
         </a>
 

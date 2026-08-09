@@ -78,15 +78,15 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "APEXWAVE SOLUTION — Build. Brand. Grow." },
+      { title: "APEXWAVES SOLUTION — Build. Brand. Grow." },
       {
         name: "description",
         content:
           "Premium branding, websites, mobile apps, digital marketing and lead generation built for measurable business growth.",
       },
-      { name: "author", content: "APEXWAVE SOLUTION" },
+      { name: "author", content: "APEXWAVES SOLUTION" },
       { name: "theme-color", content: "#0B0B0B" },
-      { property: "og:title", content: "APEXWAVE SOLUTION — Build. Brand. Grow." },
+      { property: "og:title", content: "APEXWAVES SOLUTION — Build. Brand. Grow." },
       {
         property: "og:description",
         content:
