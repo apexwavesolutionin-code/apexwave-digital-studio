@@ -185,7 +185,7 @@ export function Contact() {
 
             <div className="glass overflow-hidden rounded-3xl p-2 shadow-[var(--shadow-card)]">
               <iframe
-                title="Apexwave Solution location map"
+                title="APEXWAVES SOLUTION location map"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 src={`https://www.google.com/maps?q=${encodeURIComponent(MAP_QUERY)}&output=embed`}
@@ -371,13 +371,13 @@ export function Footer() {
             <div className="flex items-center gap-2.5">
               <img
                 src={markAsset.url}
-                alt="Apexwave Solution logo"
+                alt="APEXWAVES SOLUTION logo"
                 width={428}
                 height={311}
                 className="h-9 w-auto"
               />
               <span className="font-display text-sm font-extrabold tracking-[0.18em] uppercase">
-                Apexwave Solution
+                APEXWAVES SOLUTION
               </span>
             </div>
 
@@ -470,8 +470,8 @@ export function Footer() {
 
         <div className="hairline mt-12" />
         <div className="mt-6 flex flex-col items-center justify-between gap-3 text-xs text-muted-foreground sm:flex-row">
-          <p>© {new Date().getFullYear()} APEXWAVE SOLUTION. All rights reserved.</p>
-          <p className="font-medium">Designed with passion by APEXWAVE SOLUTION</p>
+          <p>© {new Date().getFullYear()} APEXWAVES SOLUTION. All rights reserved.</p>
+          <p className="font-medium">Designed with passion by APEXWAVES SOLUTION</p>
         </div>
       </div>
     </footer>

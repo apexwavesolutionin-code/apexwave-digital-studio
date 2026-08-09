@@ -89,7 +89,7 @@ export function Hero() {
           <div className="glass glow-ring animate-float-slow overflow-hidden rounded-3xl p-2">
             <img
               src={heroImg}
-              alt="Floating 3D laptop, smartphone and analytics dashboard showcasing Apexwave digital work"
+              alt="Floating 3D laptop, smartphone and analytics dashboard showcasing APEXWAVES digital work"
               width={1536}
               height={1152}
               className="w-full rounded-[1.25rem]"
@@ -129,7 +129,7 @@ export function About() {
           </Reveal>
           <Reveal delay={100}>
             <p className="text-base leading-relaxed text-muted-foreground">
-              APEXWAVE SOLUTION creates modern digital experiences that help businesses establish a
+              APEXWAVES SOLUTION creates modern digital experiences that help businesses establish a
               powerful online presence. From branding and web development to marketing and lead
               generation, every solution is designed to deliver measurable business growth.
             </p>
@@ -223,7 +223,7 @@ export function WhyUs() {
             className="pointer-events-none absolute -top-24 left-1/3 size-80 rounded-full bg-primary/20 blur-[120px]"
           />
           <Reveal className="max-w-2xl">
-            <p className="text-xs tracking-[0.25em] text-primary uppercase">Why Apexwave</p>
+            <p className="text-xs tracking-[0.25em] text-primary uppercase">Why APEXWAVES</p>
             <h2 className="mt-4 font-display text-3xl font-extrabold sm:text-4xl">
               Craft, clarity and accountability on every engagement.
             </h2>
