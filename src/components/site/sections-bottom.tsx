@@ -325,14 +325,14 @@ export function FinalCta() {
             <div className="mt-8 grid gap-3 sm:mt-9 sm:flex sm:flex-wrap sm:justify-center">
               <a
                 href="#contact"
-                className="group inline-flex items-center gap-2 rounded-xl bg-primary px-7 py-3.5 text-sm font-semibold text-primary-foreground transition-all hover:brightness-110 hover:shadow-[var(--shadow-glow)]"
+                className="group inline-flex items-center gap-2 rounded-xl bg-primary px-7 py-3.5 text-sm font-semibold justify-center text-primary-foreground transition-all hover:brightness-110 hover:shadow-[var(--shadow-glow)]"
               >
                 Get Started
                 <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
               </a>
               <a
                 href="mailto:apexwavesolution.in@gmail.com"
-                className="glass lift inline-flex items-center gap-2 rounded-xl px-7 py-3.5 text-sm font-semibold"
+                className="glass lift inline-flex items-center justify-center gap-2 rounded-xl px-7 py-3.5 text-sm font-semibold"
               >
                 Contact Us
               </a>
@@ -364,7 +364,7 @@ const FOOTER_SERVICES = [
 
 export function Footer() {
   return (
-    <footer className="relative border-t border-border pt-16 pb-10">
+    <footer className="relative border-t border-border pt-14 pb-28 sm:pt-16 sm:pb-10">
       <div className="mx-auto max-w-6xl px-4">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1.3fr]">
           <div>
