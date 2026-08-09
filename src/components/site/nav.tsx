@@ -103,6 +103,7 @@ export function Nav() {
           >
             Book Free Consultation
           </a>
+        </div>
       )}
     </header>
   );
