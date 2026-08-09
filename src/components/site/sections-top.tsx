@@ -69,14 +69,14 @@ export function Hero() {
               Message on WhatsApp
             </a>
           </Reveal>
-          <Reveal delay={320} className="mt-12 grid max-w-lg grid-cols-3 gap-4">
+          <Reveal delay={320} className="mt-10 grid max-w-lg grid-cols-3 gap-2.5 sm:gap-4">
             {[
               { v: 120, s: "+", l: "Projects" },
               { v: 98, s: "%", l: "Retention" },
               { v: 12, s: "K+", l: "Leads" },
             ].map((s) => (
-              <div key={s.l} className="glass rounded-2xl px-4 py-4">
-                <p className="font-display text-2xl font-extrabold text-primary">
+              <div key={s.l} className="glass rounded-2xl px-3 py-3.5 sm:px-4 sm:py-4">
+                <p className="font-display text-xl font-extrabold text-primary sm:text-2xl">
                   <Counter value={s.v} suffix={s.s} />
                 </p>
                 <p className="mt-1 text-xs text-muted-foreground">{s.l}</p>
