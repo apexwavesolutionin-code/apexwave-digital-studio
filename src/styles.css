@@ -51,6 +51,48 @@
 
 :root {
   --radius: 1rem;
+  /* Light theme */
+  --background: oklch(0.985 0 0);
+  --foreground: oklch(0.16 0.005 260);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.16 0.005 260);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.16 0.005 260);
+  --primary: oklch(0.58 0.196 260.2);
+  --primary-foreground: oklch(0.99 0 0);
+  --secondary: oklch(0.95 0.006 260);
+  --secondary-foreground: oklch(0.2 0.008 260);
+  --muted: oklch(0.95 0.006 260);
+  --muted-foreground: oklch(0.48 0.014 260);
+  --accent: oklch(0.58 0.196 260.2);
+  --accent-foreground: oklch(0.99 0 0);
+  --destructive: oklch(0.58 0.23 25);
+  --destructive-foreground: oklch(0.99 0 0);
+  --border: oklch(0.16 0.005 260 / 12%);
+  --input: oklch(0.16 0.005 260 / 16%);
+  --ring: oklch(0.58 0.196 260.2);
+
+  --glass: oklch(1 0 0 / 70%);
+  --glass-border: oklch(0.16 0.005 260 / 10%);
+  --elevated: oklch(1 0 0);
+
+  --gradient-hero: radial-gradient(
+      120% 90% at 15% 0%,
+      color-mix(in oklab, var(--primary) 18%, transparent) 0%,
+      transparent 60%
+    ),
+    radial-gradient(90% 70% at 90% 20%, color-mix(in oklab, var(--primary) 10%, transparent) 0%, transparent 65%);
+  --gradient-line: linear-gradient(
+    90deg,
+    transparent,
+    color-mix(in oklab, var(--primary) 70%, transparent),
+    transparent
+  );
+  --shadow-glow: 0 30px 90px -30px color-mix(in oklab, var(--primary) 45%, transparent);
+  --shadow-card: 0 24px 60px -32px oklch(0.16 0.005 260 / 35%);
+}
+
+.dark {
   --background: oklch(0.145 0 0);
   --foreground: oklch(0.985 0 0);
   --card: oklch(0.185 0.005 260);
@@ -81,15 +123,10 @@
       transparent 60%
     ),
     radial-gradient(90% 70% at 90% 20%, color-mix(in oklab, var(--primary) 14%, transparent) 0%, transparent 65%);
-  --gradient-line: linear-gradient(
-    90deg,
-    transparent,
-    color-mix(in oklab, var(--primary) 70%, transparent),
-    transparent
-  );
   --shadow-glow: 0 30px 90px -30px color-mix(in oklab, var(--primary) 55%, transparent);
   --shadow-card: 0 24px 60px -32px oklch(0 0 0 / 80%);
 }
+
 
 @keyframes float {
   0%,
