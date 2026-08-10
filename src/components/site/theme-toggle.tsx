@@ -28,7 +28,7 @@ export function ThemeToggle({ className }: { className?: string }) {
     })();
     const initial: Theme =
       stored ??
-      (window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+      ("dark");
     setTheme(initial);
     applyTheme(initial);
   }, []);
