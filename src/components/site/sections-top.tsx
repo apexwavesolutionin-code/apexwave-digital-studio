@@ -110,11 +110,12 @@ export function Hero() {
 }
 
 const STATS = [
-  { value: 120, suffix: "+", label: "Projects Completed" },
+  { value: 15, suffix: "+", label: "Projects Completed" },
   { value: 85, suffix: "+", label: "Happy Clients" },
   { value: 12500, suffix: "+", label: "Leads Generated" },
-  { value: 7, suffix: "+", label: "Years of Experience" },
+  { value: 1.5, suffix: "+", label: "Years of Experience", decimals: 1 },
 ];
+
 
 export function About() {
   return (
