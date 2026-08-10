@@ -26,9 +26,8 @@ export function ThemeToggle({ className }: { className?: string }) {
         return null;
       }
     })();
-    const initial: Theme =
-      stored ??
-      ("dark");
+    const initial: Theme = stored ?? "dark";
+
     setTheme(initial);
     applyTheme(initial);
   }, []);
