@@ -59,10 +59,12 @@ export function Counter({
   value,
   suffix = "",
   duration = 1600,
+  decimals = 0,
 }: {
   value: number;
   suffix?: string;
   duration?: number;
+  decimals?: number;
 }) {
   const ref = useRef<HTMLSpanElement>(null);
   const [n, setN] = useState(0);
@@ -78,7 +80,7 @@ export function Counter({
       const tick = (now: number) => {
         const p = Math.min(1, (now - start) / duration);
         const eased = 1 - Math.pow(1 - p, 3);
-        setN(Math.round(value * eased));
+        setN(value * eased);
         if (p < 1) raf = requestAnimationFrame(tick);
       };
       raf = requestAnimationFrame(tick);
@@ -92,8 +94,9 @@ export function Counter({
 
   return (
     <span ref={ref}>
-      {n}
+      {decimals > 0 ? n.toFixed(decimals) : Math.round(n)}
       {suffix}
     </span>
   );
 }
+
