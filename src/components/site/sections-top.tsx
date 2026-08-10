@@ -71,10 +71,11 @@ export function Hero() {
           </Reveal>
           <Reveal delay={320} className="mt-10 grid max-w-lg grid-cols-3 gap-2.5 sm:gap-4">
             {[
-              { v: 120, s: "+", l: "Projects" },
+              { v: 15, s: "+", l: "Projects" },
               { v: 98, s: "%", l: "Retention" },
               { v: 12, s: "K+", l: "Leads" },
             ].map((s) => (
+
               <div key={s.l} className="glass rounded-2xl px-3 py-3.5 sm:px-4 sm:py-4">
                 <p className="font-display text-xl font-extrabold text-primary sm:text-2xl">
                   <Counter value={s.v} suffix={s.s} />
@@ -110,11 +111,12 @@ export function Hero() {
 }
 
 const STATS = [
-  { value: 120, suffix: "+", label: "Projects Completed" },
+  { value: 15, suffix: "+", label: "Projects Completed" },
   { value: 85, suffix: "+", label: "Happy Clients" },
   { value: 12500, suffix: "+", label: "Leads Generated" },
-  { value: 7, suffix: "+", label: "Years of Experience" },
+  { value: 1.5, suffix: "+", label: "Years of Experience", decimals: 1 },
 ];
+
 
 export function About() {
   return (
@@ -141,12 +143,13 @@ export function About() {
             <Reveal key={s.label} delay={i * 90}>
               <div className="glass lift h-full rounded-3xl p-6">
                 <p className="font-display text-4xl font-extrabold">
-                  <Counter value={s.value} suffix={s.suffix} />
+                  <Counter value={s.value} suffix={s.suffix} decimals={s.decimals ?? 0} />
                 </p>
                 <p className="mt-2 text-sm text-muted-foreground">{s.label}</p>
               </div>
             </Reveal>
           ))}
+
         </div>
       </div>
     </section>

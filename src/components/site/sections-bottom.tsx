@@ -81,7 +81,7 @@ export function Contact() {
   };
 
   const field =
-    "w-full rounded-xl border border-border bg-white/[0.03] px-4 py-3 text-sm outline-none transition-colors placeholder:text-muted-foreground/70 focus:border-primary/60";
+    "w-full rounded-xl border border-border bg-foreground/[0.04] px-4 py-3 text-sm outline-none transition-colors placeholder:text-muted-foreground/70 focus:border-primary/60";
 
   return (
     <section id="contact" className="relative py-16 sm:py-24">
@@ -139,7 +139,7 @@ export function Contact() {
                     key={a.l}
                     href={a.h}
                     {...(a.ext ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-                    className="lift flex items-center gap-2 rounded-xl border border-border bg-white/[0.03] px-3.5 py-3 text-[13px] font-medium"
+                    className="lift flex items-center gap-2 rounded-xl border border-border bg-foreground/[0.04] px-3.5 py-3 text-[13px] font-medium"
                   >
                     <a.i className="size-4 shrink-0 text-primary" />
                     <span className="truncate">{a.l}</span>
@@ -147,7 +147,7 @@ export function Contact() {
                 ))}
               </div>
 
-              <div className="mt-6 rounded-2xl border border-border bg-white/[0.02] p-4 text-sm">
+              <div className="mt-6 rounded-2xl border border-border bg-foreground/[0.03] p-4 text-sm">
                 <p className="flex items-center gap-2 font-display font-semibold">
                   <Clock className="size-4 text-primary" /> Business Hours
                 </p>
@@ -175,7 +175,7 @@ export function Contact() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={s.label}
-                    className="grid size-11 place-items-center rounded-full border border-border bg-white/[0.03] text-muted-foreground transition-all hover:-translate-y-1 hover:border-primary/50 hover:text-primary"
+                    className="grid size-11 place-items-center rounded-full border border-border bg-foreground/[0.04] text-muted-foreground transition-all hover:-translate-y-1 hover:border-primary/50 hover:text-primary"
                   >
                     <s.icon className="size-4" />
                   </a>
@@ -455,7 +455,7 @@ export function Footer() {
                 type="email"
                 maxLength={255}
                 placeholder="you@company.com"
-                className="min-w-0 flex-1 rounded-xl border border-border bg-white/[0.03] px-3.5 py-2.5 text-sm outline-none focus:border-primary/60"
+                className="min-w-0 flex-1 rounded-xl border border-border bg-foreground/[0.04] px-3.5 py-2.5 text-sm outline-none focus:border-primary/60"
               />
               <button
                 type="submit"

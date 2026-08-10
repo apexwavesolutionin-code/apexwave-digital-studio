@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import markAsset from "@/assets/apexwave-mark.png.asset.json";
+import { ThemeToggle } from "./theme-toggle";
+
 
 
 const LINKS = [
@@ -63,12 +65,14 @@ export function Nav() {
         </ul>
 
         <div className="flex shrink-0 items-center gap-2">
+          <ThemeToggle />
           <a
             href="#contact"
             className="hidden rounded-xl bg-primary px-4 py-2.5 text-[13px] font-semibold text-primary-foreground transition-all hover:brightness-110 hover:shadow-[var(--shadow-glow)] sm:inline-flex"
           >
             Book Free Consultation
           </a>
+
           <button
             type="button"
             aria-label={open ? "Close menu" : "Open menu"}
@@ -89,7 +93,7 @@ export function Nav() {
                 <a
                   href={l.href}
                   onClick={() => setOpen(false)}
-                  className="block rounded-lg px-3 py-2.5 text-sm text-muted-foreground hover:bg-white/5 hover:text-foreground"
+                  className="block rounded-lg px-3 py-2.5 text-sm text-muted-foreground hover:bg-foreground/5 hover:text-foreground"
                 >
                   {l.label}
                 </a>
